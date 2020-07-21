@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <svg id ='ocean' preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 100 28" >
+      <defs>
+        <path id='path'class='wave1'd="M-130 47
+                            c30 10 58-15 88-20
+                            s58 18 88 18 58-18 88-18 58 28 88 18 
+                            v44h-352z"></path>  
+      </defs>  
+      <g class="risingWaves">
+        <use href="#path"  x="48" y="5" fill="#003366" opacity="0.9" />
+        <use href="#path" x="48" y="5" fill=" #EBF4FA" opacity="0.8"/>
+        <use href="#path" x="48" y="7" fill="#145DA0" opacity="0.4" />
+        <use href="#path" x="48" y="5" fill="rgba(160, 212, 275, 0.7)" />
+        <use href="#path" x="48" y="7" fill="#145DA0" opacity="0.8" />
+      </g>
+    </svg>
+  </body>
+</html>
