@@ -206,14 +206,14 @@ svg {
 }
 
 #ocean{
-  position: fixed;
+  position: absolute;
   z-index: -100;
  bottom: 25em;
-  left:0;
-
+ left:0;
 }
+
  #deepWater{
-   margin-top: 9em;
+   margin-top: 11em;
    position: relative;
    z-index: -200;
   background-image: linear-gradient(#145DA0, #ccc);
