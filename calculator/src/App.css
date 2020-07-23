@@ -7,16 +7,18 @@ body{
 }
 
 #box{ 
-  position: absolute;
+  position: relative;
   z-index: 10;
   margin-left: 4em;
-  margin-top: 4em;
+  margin-top: 10em;
   text-align: center;
   max-width: 40%;
-  width:30%;
+  width:25%;
   background-color: #FF8066;
    border: 3px solid black;
   border-radius: 5%;
+  height: 43em;
+  max-height: 43em;
 }
 .keyboard{
   margin: 1em auto;
@@ -42,8 +44,9 @@ button{
 .screen{
   background-color: white;
   min-height: 4em;
-  height: auto;
-  width: 50%;
+  height: 7em;
+  max-height: 7em;
+  width: 65%;
   margin: 0 auto 0 auto;
   border: 3px solid black;
   text-align: right !important;
@@ -122,18 +125,15 @@ h2{
   padding:0em;
   margin: 0em;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
   #box{
-    width: 75%;
-    height: auto;
+    width: 70%;
     max-width: 95%;
   };
   .screen, .keyboard{
     width: 80%
   };
-  svg{
-    margin-top: 500px;
-  }
+
 }
 
 
@@ -173,21 +173,18 @@ svg {
 }
 */
 
-svg{
-  margin-top: 450px;
-}
 
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
   }
   100% { 
-    transform: translate3d(85px,0,0);
+    transform: translate3d(95px,0,0);
   }
 }
 
 .risingWaves > use {
-  animation: move-forever 30s cubic-bezier(.55,.5,.45,.5)     infinite;
+  animation: move-forever 10s cubic-bezier(.55,.5,.45,.5) infinite;
 }
 
 .risingWaves > use:nth-child(1) {
@@ -207,4 +204,24 @@ svg{
   animation-delay: -14s;
   animation-duration: 25s;
 }
+
+#ocean{
+  position: fixed;
+  z-index: -100;
+ bottom: 27em;
+  left:0;
+
+}
+ #deepWater{
+   margin-top: 9em;
+   position: relative;
+   z-index: -200;
+  background-image: linear-gradient(#145DA0, #ccc);
+  opacity: 0.9;
+  bottom: 0;
+  height: 25em;
+} 
+/* #path.wave1{
+height: 2px;
+} */
 

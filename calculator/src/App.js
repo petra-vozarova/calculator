@@ -63,7 +63,7 @@ class Buttons extends React.Component{
     });
     document.getElementById('currentValue').innerHTML = this.state.summary;
     document.getElementById('display').innerHTML= this.state.input; 
-     //document.getElementById('ocean').style.marginTop = '37.5em';
+    document.getElementById('ocean').setAttribute("viewBox", "0 24 200 28")
   }
 
   calculateResult(){
@@ -78,14 +78,19 @@ class Buttons extends React.Component{
     });
     document.getElementById('currentValue').innerHTML = this.state.input;
     document.getElementById('display').innerHTML=this.state.summary;
-    /*if(parseInt(summary) > 25 && parseInt(summary) < 100) {
-  document.getElementById('ocean').style.marginTop = '25em';
-      let shape = document.getElementsByTagName("svg")[0];
-      shape.setAttribute("viewbox","0 24 175 28");
-  } else if(parseInt(summary) > 100 && parseInt(summary) < 200) {
-  document.getElementById('ocean').style.marginTop = '15em'
-  } else if(parseInt(summary) > 200){
-  document.getElementById('ocean').style.marginTop = '5em'}*/
+    if(parseInt(summary) > 50 && parseInt(summary) < 100) {
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 150 28")
+    } else if(parseInt(summary) < 50) {
+        document.getElementById('ocean').setAttribute("viewBox", "0 24 200 28")
+    } else if(parseInt(summary) > 100 && parseInt(summary) < 200) {
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 100 28")
+    } else if(parseInt(summary) > 200 && parseInt(summary) < 500){
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 50 28")
+    } else if(parseInt(summary) > 500 && parseInt(summary) < 100){
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 50 28")
+    } else if(parseInt(summary) > 1000){
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 30 28")
+    }
   }
    
   
