@@ -83,13 +83,13 @@ class Buttons extends React.Component{
     } else if(parseInt(summary) < 50) {
         document.getElementById('ocean').setAttribute("viewBox", "0 24 200 28")
     } else if(parseInt(summary) > 100 && parseInt(summary) < 200) {
-      document.getElementById('ocean').setAttribute("viewBox", "0 24 100 28")
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 120 28")
     } else if(parseInt(summary) > 200 && parseInt(summary) < 500){
-      document.getElementById('ocean').setAttribute("viewBox", "0 24 50 28")
-    } else if(parseInt(summary) > 500 && parseInt(summary) < 100){
-      document.getElementById('ocean').setAttribute("viewBox", "0 24 50 28")
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 100 28")
+    } else if(parseInt(summary) > 500 && parseInt(summary) < 1000){
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 70 28")
     } else if(parseInt(summary) > 1000){
-      document.getElementById('ocean').setAttribute("viewBox", "0 24 30 28")
+      document.getElementById('ocean').setAttribute("viewBox", "0 24 50 28")
     }
   }
    

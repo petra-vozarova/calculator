@@ -8,9 +8,10 @@ body{
   margin:0;
   width: 100%;
   height:100%;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #ccc;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #box{ 
@@ -140,12 +141,19 @@ h2{
   .screen, .keyboard{
     width: 80%
   };
+  #ocean{
+    z-index: -100;
+    left:0;
+    bottom:0;
+  };
 }
 
 @media screen and (min-width: 800px){
   #box{
     width: 40%;
     max-width: 95%;
+    height:30%;
+    max-height:30%;
   };
   .screen, .keyboard{
     width: 80%
@@ -161,44 +169,6 @@ h2{
     width: 80%
   };
 }
-
-
-
-/*#background{
-  background-color: #6497b1;
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  height:auto;
-}
-svg {
-  margin-top: 35em;
-  width: 100%;
-  height: 500px;
-  float: right;
-}
-#path1{
-  stroke: #005b;
-  stroke-width: 10px;
-  stroke-linecap: round;
- fill:#b3cdee;
-  margin-bottom: 0em;
-}
-
-#path2{
-   stroke: #005b96;
-  stroke-width: 8px;
-  stroke-linecap: round;
- fill: #6497be;
-}
-#path3{
-  stroke: #b3cde0;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  fill: #6497bf;
-}
-*/
-
 
 @keyframes move-forever {
   0% {
@@ -232,21 +202,10 @@ svg {
 }
 
 #ocean{
-  position: absolute;
+  position:fixed;
   z-index: -100;
   left:0;
   bottom:0;
 }
-
- /*#deepWater{
-   margin-top: 6%;
-   position: fixed;
-   z-index: -100;
-  background-image: linear-gradient(#145DA0, #ccc);
-  opacity: 0.9;
-  bottom: 0;
-  left:0;
-  height: 100%;
-} */
 
 
