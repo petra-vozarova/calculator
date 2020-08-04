@@ -1,7 +1,7 @@
 # Calculator
 
-Source code can be accesed at: [GitHub](https://github.com/petra-vozarova/calculator/tree/master/calculator)
-Web application in action can be accessed at: [GitHub](https://petra-vozarova.github.io/calculator/)
+Source code can be accesed at [my GitHub repository](https://github.com/petra-vozarova/calculator/tree/master/calculator),
+or you can see deployed [caclulator application](https://petra-vozarova.github.io/calculator/) in action.
 
 ## Introduction
 
@@ -35,21 +35,21 @@ This animation interacts with the calculator. When the calculation is p
 
 ## Local Deployment
 
-To run the application locally, please download the source code from: [GitHub](https://github.com/petra-vozarova/calculator/tree/master/calculator)
+To run the application locally, please download the source code from: [GitHub Source Code](https://github.com/petra-vozarova/calculator/tree/master/calculator)
 
 
 ###  Prerequisites
 
 This application was written in Node.js using React and ReactDom dependencies. In order to run the application you will need to have the npm package installed on your local device.
 
-Before starting the app, please make sure that you are in the correct directory that ends with `\calculator\calculator`.
+Before starting the app, please make sure that you are in the correct directory that ends with `\calculator`.
 
 In the command line run the following code:
 `npm start`
 
 Now, the app should be up and running on your local port.
 Please navigate to:
-[caption](http://localhost:3000/calculator)
+[local deployment](http://localhost:3000/calculator)
 
 #### Thank you for your time and interest in my calculator application. I hope that you enjoy it! 
 
