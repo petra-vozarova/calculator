@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Calculator
 
-## Available Scripts
+Source code can be accesed at: [GitHub](https://github.com/petra-vozarova/calculator/tree/master/calculator)
+Web application in action can be accessed at: [GitHub](https://petra-vozarova.github.io/calculator/)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+This web-application offers the functionality of a **formula calculator**. It means that it performs calculations in two steps: 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- a user enters the formula in full
+- upon pressing '=' button, results are displayed
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+It recognizes basic mathematical operations, decimal numbers, and command to clear input in full. 
 
-### `npm test`
+### Mathematical Operations
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The user enters values by clicking on the desired buttons. The display is divided into two sections. In the upper section, all entered values are shown. In the bottom section,the most current value is shown. 
 
-### `npm run build`
+Calculator **dynamically clears input from the user** if multiple mathematical signs are entered using the most recent sign. If signs for multiplication or division are preceded by subtraction, both operations are performed.
+ 
+### Equals
+The result is displayed in the upper section of the display and any following operations are performed on the value of the result.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ACC Button
+Pressing 'ACC' buttons returns the calculator to its default state. All the memory is cleared and number 0 appears on display.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Decimal Numbers
+The calculator handles decimal numbers and allows only one decimal sign per number. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Maximun Length
+If the user exceeds the maximum length of the input which is by default set to 21 signs, the warning message will appear on the screen saying that the maximum limit was exceeded.
 
-### `npm run eject`
+### Wave Animation
+This animation interacts with the calculator. When the calculation is performed. Animations access the value of the result. It compares the result against the pre-specified conditions. If any condition is met, the high of waves increases accordingly. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Local Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the application locally, please download the source code from: [GitHub](https://github.com/petra-vozarova/calculator/tree/master/calculator)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+###  Prerequisites
 
-## Learn More
+This application was written in Node.js using React and ReactDom dependencies. In order to run the application you will need to have the npm package installed on your local device.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before starting the app, please make sure that you are in the correct directory that ends with `\calculator\calculator`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In the command line run the following code:
+`npm start`
 
-### Code Splitting
+Now, the app should be up and running on your local port.
+Please navigate to:
+[caption](http://localhost:3000/calculator)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### Thank you for your time and interest in my calculator application. I hope that you enjoy it! 
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
