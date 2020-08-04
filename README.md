@@ -1,6 +1,6 @@
 # Calculator
 
-Source code can be accesed at [my GitHub repository](https://github.com/petra-vozarova/calculator/tree/master/calculator),
+Source code can be accesed at [my GitHub repository](https://github.com/petra-vozarova/calculator),
 or you can see deployed [caclulator application](https://petra-vozarova.github.io/calculator/) in action.
 
 ## Introduction
@@ -35,7 +35,7 @@ This animation interacts with the calculator. When the calculation is p
 
 ## Local Deployment
 
-To run the application locally, please download the source code from: [GitHub Source Code](https://github.com/petra-vozarova/calculator/tree/master/calculator)
+To run the application locally, please download the source code from: [GitHub Source Code](https://github.com/petra-vozarova/calculator)
 
 
 ###  Prerequisites
@@ -49,7 +49,7 @@ In the command line run the following code:
 
 Now, the app should be up and running on your local port.
 Please navigate to:
-[local deployment](http://localhost:3000/calculator)
+[local port 3000](http://localhost:3000/calculator)
 
 #### Thank you for your time and interest in my calculator application. I hope that you enjoy it! 
 
